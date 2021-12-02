@@ -1,0 +1,176 @@
+body {
+   background-color: #424242;
+ }
+
+ p,output,a {
+   color: whitesmoke;
+   
+ }
+ p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+ }
+ p.text1 {
+  justify-content: left;
+  margin-top: 20;
+  margin-bottom: 0;
+  /* background-color: blue; */
+  }
+
+ p.text2 {
+  justify-content: left;
+  margin-top: 0;
+  margin-bottom: 20;
+  /* background-color: green; */
+  }
+  
+/* (A) GRID CONTAINER */
+#grid-col {
+   display: grid;
+   margin-top: 20px;
+   grid-template-columns: 31px 31px;
+   grid-template-columns: repeat(51, 32px);
+ }
+  
+ /* (B) GRID CELLS */
+ div.cell {
+   margin-top: 75px;
+   height: 80vh;
+   padding: 0px;
+   grid-column: auto / span 2;
+ }
+
+ input[type="range"]{
+  -webkit-appearance: slider-vertical;
+ }
+
+
+ input[type=checkbox] {
+   display: none;
+ }
+
+ input[type=checkbox]:checked+label {
+   background-color: white;
+   border: 3px solid #ffffff;
+   border-radius: 50%;
+
+   background-position: center;
+   background-size: auto 75%;
+   background-repeat: no-repeat;
+   height: 25px;
+   width: 25px;
+   display: inline-block;
+   padding: 0px;
+ }
+
+ input[type=checkbox]+label {
+   border: 3px dotted #ffffff;
+   background: #707070;
+   border-radius: 50%;
+   height: 25px;
+   width: 25px;
+   display: inline-block;
+   padding: 0px;
+ }
+
+ input[Kingdom="CapKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon.svg");
+ }
+
+ input[kingdom="CascadeKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon.svg");
+ }
+
+ input[kingdom="SandKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon_Sand.svg");
+ }
+
+ input[kingdom="LakeKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon_Lake.svg");
+ }
+
+ input[kingdom="WoodedKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon_Wooded.svg");
+ }
+
+ input[kingdom="CloudKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon.svg");
+ }
+
+ input[kingdom="LostKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon.svg");
+ }
+
+ input[kingdom="MetroKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon_Metro.svg");
+ }
+
+ input[kingdom="SnowKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon_Snow.svg");
+ }
+
+ input[kingdom="SeasideKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon_Seaside.svg");
+ }
+
+ input[kingdom="LuncheonKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon_Luncheon.svg");
+ }
+
+ input[kingdom="RuinedKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon.svg");
+ }
+
+ input[kingdom="BowserKingdom"]:checked+label {
+   background-image: url("Assists/Power_Moon_Bowser.svg");
+ }
+
+ input[kingdom="MoonKingdom"]:checked+label {
+background-image: url("Assists/Power_Moon_Moon.svg");
+}
+
+input[kingdom="MushroomKingdom"]:checked+label {
+background-image: url("Assists/Power_Moon.svg");
+}
+
+input[kingdom="DarkKingdom"]:checked+label {
+background-image: url("Assists/Power_Moon.svg");
+}
+
+input[kingdom="DarkerKingdom"]:checked+label {
+background-image: url("Assists/Power_Moon.svg");
+}
+
+.Total {
+  position: absolute;
+  top: 2;
+  left: 2;
+}
+
+.config {
+  position: absolute;
+  top: 450px;
+  left: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #000a;
+  background-color: #323232aa;
+  padding: 10px;
+  
+}
+
+.configGrid {
+  display: grid;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  grid-template-columns: 95px 31px 80px 31px;
+  /* grid-template-columns: repeat(2, 32px); */
+ grid-template-rows: repeat(9, 32px);;
+ grid-row-gap: 5px;
+ grid-column-gap: 5px ;
+
+}
