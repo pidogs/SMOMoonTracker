@@ -26,6 +26,10 @@ body {
   /* background-color: green; */
   }
   
+.Slider {
+  width: 25;
+}
+
 /* (A) GRID CONTAINER */
 #grid-col {
    display: grid;
